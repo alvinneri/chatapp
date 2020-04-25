@@ -8,8 +8,8 @@ const cors = require('cors');
 const Message = require('./models/messageModels');
 
 const app = express();
-// const server = http.createServer(app);
-const io = socketio(app);
+const server = http.createServer(app);
+const io = socketio(server);
 
 const {addUsers, removeUser ,getUser} = require('./users');
 
@@ -75,5 +75,5 @@ app.get("*", (req, res) => {
 
 }
 
-app.listen(PORT, ()=> { console.log(`Server has started on port ${PORT}`);
+server.listen(PORT, ()=> { console.log(`Server has started on port ${PORT}`);
 });
