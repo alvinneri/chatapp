@@ -1,0 +1,227 @@
+
+.background{
+  width: 640px;
+  height: 1136px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header{
+  border-bottom: 2px solid #ccd6dd;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.chat-app{
+  font-size: 30px;
+  padding-top: 28px;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  font-family: "Arial";
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Login/SignUp Form */
+
+.form{
+  width: 100%;
+  height: 100%;
+}
+
+#username{
+  background-color: rgb(245, 248, 250);
+  margin-top: 45px;
+  width: 585px;
+  height: 92px;
+  font-size: 30px;
+  font-family: "Arial";
+  color: rgb(100, 119, 135);
+  line-height: 1.2;
+  padding-left: 19px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 19px;
+}
+
+.warning::placeholder{
+  color: red;
+}
+
+#password{
+  background-color: rgb(245, 248, 250);
+  margin-left: 19px;
+  margin-top: 27px;
+  width: 585px;
+  height: 92px;
+  padding-left: 19px;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+  font-family: "Arial";
+  
+}
+
+
+#username , #password, #message:focus{
+  outline: none;
+}
+
+.button {
+  margin-top: 27px;
+  background-color: rgb(136, 227, 6);
+  margin-left: 19px;
+  top: 383px;
+  width: 604px;
+  height: 92px;
+  z-index: 5;
+  font-size: 30px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.button:focus{
+  outline: none;
+}
+
+/* ChatArea */
+
+.form p{
+  font-size: 24px;
+  font-family: "Arial";
+  color: rgb(100, 119, 135);
+  line-height: 1.5;
+  padding-left: 19px;
+}
+
+.contents{
+  width: 640px;
+  height: 938px;
+  overflow-y: scroll;
+  border-bottom: solid 2px rgb(204, 214, 221);
+  
+}
+
+.contents::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+
+#message{
+  font-size: 24px;
+  font-family: "Arial";
+  color: rgb(100, 119, 135);
+  line-height: 1.5;
+  margin-left: 20px;
+  padding-left: 16px;
+  width: 484px;
+  margin-top: 27px;
+  background-color: rgb(245, 248, 250);
+  border: none;
+  border-radius: 10px;
+
+}
+
+.button-gray{
+  margin-left: 22px;
+  background-color: rgb(102, 102, 102);
+  font-size: 24px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  width: max-content;
+  line-height: 1.5;
+  border-radius: 10px;
+  border: none;
+  
+}
+
+.button-gray:focus{
+  outline: none;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+}
+
+.usermessage-container{
+  width: 100%;
+  overflow-x: hidden;
+  
+  
+}
+
+.usermessage-container > div {
+  float: right;
+  padding-right: 19px;
+  
+}
+
+.usercontainer{
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: "Arial";
+  text-align: justifyLeft;
+  line-height: 1.5;
+  background-color: rgb(136, 227, 6);
+  margin-left: 19px;
+  padding: 19px;
+  overflow-x: hidden;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 0;
+  
+}
+
+.username{
+  font-size: 24px;
+  font-family: "Arial";
+  color: rgb(100, 119, 135);
+  line-height: 1.5;
+  text-align: right;
+  margin: 0;
+
+}
+
+.not-user{
+  font-size: 24px;
+  font-family: "Arial";
+  color: rgb(100, 119, 135);
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+  margin-left: 19px;
+
+}
+
+.notusercontainer{
+  width: 100%;
+  overflow-x: hidden;
+  
+  
+}
+
+.notusercontainer > div {
+  float: left;
+  
+}
+
+.chatarea{
+  position: relative;
+}
+.logout{
+  position: absolute;
+  left: 492px;
+  top: -95px;
+}
+
+
+
+
